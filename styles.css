@@ -47,6 +47,13 @@ main {
     font-size: 3.5rem;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    .text-2 {
+        /* Ajusta el espaciado según sea necesario */
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+}
 .text-3 {
     font-family: 'Cooper Hewitt';
     color: #141414;
@@ -148,7 +155,7 @@ main {
     font-size: 1.5rem;
     letter-spacing: .1rem;
     white-space: pre-line;
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 2.2rem;
 }
 /* cardHabilidades */
@@ -256,8 +263,12 @@ footer {
 .zoom {
     transition: transform .2s; /* Animation */
 }
-  
+
 .zoom:hover {
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.responsive {
+    width: 100%;
+    height: auto;
 }
 
